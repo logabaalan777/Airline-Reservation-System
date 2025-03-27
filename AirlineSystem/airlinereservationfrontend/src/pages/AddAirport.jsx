@@ -27,7 +27,7 @@ const AddAirport = () => {
 
       if (response.ok) {
         alert("Airport added successfully!");
-        navigate("/view-airports"); 
+        navigate("/admin-dashboard"); 
       } else {
         alert("Failed to add airport.");
       }

@@ -124,7 +124,7 @@ const PassengerDashboard = () => {
             <p>From: {flight.from} → To: {flight.to}</p>
             <p>Duration: {flight.duration}</p>
             <p className="price">{flight.price}</p>
-            <button className="book-now">Book Now</button>
+            {/* <button className="book-now">Book Now</button> */}
           </div>
         ))}
       </div>

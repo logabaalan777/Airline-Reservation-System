@@ -12,7 +12,6 @@ const PaymentPage = () => {
     const [calculatedFare, setCalculatedFare] = useState(0);
     const [walletBalance, setWalletBalance] = useState(null);
     const [error, setError] = useState("");
-
     // 🔹 **Determine seatType from selectedSeats (if missing)**
     const seatType = passedSeatType || (selectedSeats.length > 0 ? selectedSeats[0].seatType : "Economy");
 
