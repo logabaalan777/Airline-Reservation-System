@@ -1,0 +1,152 @@
+/* Unique CSS for Passenger Account Page */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+.unique-passenger-account-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2919a3 0%, #2d6ed0 100%);
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 2px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.unique-passenger-account-container {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.unique-logout-circle {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 50, 50, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.unique-logout-circle:hover {
+    background: rgba(255, 20, 20, 1);
+    transform: scale(1.1);
+}
+
+.unique-logout-circle svg {
+    color: white;
+    font-size: 20px;
+}
+
+.unique-profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.unique-profile-icon {
+    font-size: 100px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.unique-profile-name {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.unique-account-details {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.unique-detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.unique-detail-icon {
+    font-size: 30px;
+    color: white;
+    margin-right: 15px;
+    min-width: 40px;
+    text-align: center;
+}
+
+.unique-detail-text {
+    flex-grow: 1;
+}
+
+.unique-detail-label {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.unique-detail-text p {
+    color: white;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.unique-passenger-loading {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 480px) {
+    .unique-passenger-account-container {
+        width: 90%;
+        margin: 0 10px;
+        padding: 20px;
+    }
+    .unique-profile-icon {
+        font-size: 80px;
+    }
+    .unique-profile-name {
+        font-size: 20px;
+    }
+    .unique-detail-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .unique-detail-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

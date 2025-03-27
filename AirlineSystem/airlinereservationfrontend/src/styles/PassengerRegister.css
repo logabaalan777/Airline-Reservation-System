@@ -1,0 +1,100 @@
+/* Passenger Registration Page Styles */
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #004080, #0099cc);
+}
+
+.register-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 500px;
+}
+
+.register-form h2 {
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+
+/* Two-column layout */
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+/* Each column takes 50% */
+
+.form-column {
+    width: 50%;
+}
+
+
+/* Input field styles */
+
+.passenger-input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.passenger-input-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.passenger-input-group input,
+.passenger-input-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Register button */
+
+.register-btn {
+    background: #004080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.register-btn:hover {
+    background: #0099cc;
+}
+
+
+/* Login link */
+
+.login-link {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #0099cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

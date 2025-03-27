@@ -1,0 +1,127 @@
+/* Unique class for the entire My Bookings page */
+
+.my-bookings-page-container {
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+/* Title styling */
+
+.my-bookings-title {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+/* Passenger name styling */
+
+.my-bookings-passenger-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+
+/* Table container */
+
+.my-bookings-table-container {
+    overflow-x: auto;
+}
+
+
+/* Unique table styling */
+
+.my-bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Table header */
+
+.my-bookings-table thead {
+    background: #3498db;
+    color: white;
+    font-size: 18px;
+}
+
+.my-bookings-table th {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+
+/* Table row styling */
+
+.my-bookings-table tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease;
+}
+
+.my-bookings-table tbody tr:hover {
+    background: #f1f1f1;
+}
+
+
+/* Table cell styling */
+
+.my-bookings-table td {
+    padding: 12px;
+    color: #2c3e50;
+    font-size: 16px;
+}
+
+
+/* Status styles */
+
+.status-confirmed {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.status-cancelled {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.status-pending {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+
+/* No bookings message */
+
+.my-bookings-no-data {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-top: 20px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .my-bookings-page-container {
+        width: 95%;
+    }
+    .my-bookings-table th,
+    .my-bookings-table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

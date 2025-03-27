@@ -1,0 +1,85 @@
+/* Admin Registration Page Styles */
+
+.admin-register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    background: linear-gradient(to right, #003366, #00509e);
+}
+
+.admin-register-box {
+    max-width: 500px;
+    padding: 30px;
+    width: 80%;
+    height: 55%;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h2 {
+    color: #003366;
+    margin-bottom: 40px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.admin-input-group {
+    text-align: left;
+}
+
+.admin-input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.admin-input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #00509e;
+}
+
+
+/* Login link styling */
+
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
