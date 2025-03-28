@@ -111,7 +111,7 @@ const AdminRegister = () => {
         </form>
 
         <p className="login-link">
-          Already registered? <Link to="/admin-login">Go to Login</Link>
+          Already registered? <Link to="/login">Go to Login</Link>
         </p>
       </div>
     </div>
