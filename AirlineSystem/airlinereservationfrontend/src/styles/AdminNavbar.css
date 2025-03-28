@@ -14,6 +14,10 @@
     font-weight: bold;
 }
 
+.admin-logo-link:hover {
+    color: #f0a500;
+}
+
 .admin-nav-links {
     list-style: none;
     display: flex;
