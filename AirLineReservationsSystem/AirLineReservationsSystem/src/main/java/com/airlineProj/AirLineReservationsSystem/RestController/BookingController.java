@@ -5,6 +5,7 @@ import com.airlineProj.AirLineReservationsSystem.DTO.BookingRequest;
 import com.airlineProj.AirLineReservationsSystem.Services.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
@@ -13,14 +14,17 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/bookings")
+@CrossOrigin(origins = "http://localhost:3000")
 public class BookingController {
 
     @Autowired
     private BookingService bookingService;
 
-    @GetMapping
+    @GetMapping("/all")
     public List<Booking> getAllBookings() {
-        return bookingService.getAllBookings();
+        List<Booking> bookings = bookingService.getAllBookings();
+        System.out.println("📌 Retrieved Bookings from DB: " + bookings);
+        return bookings;
     }
 
     @GetMapping("/{id}")

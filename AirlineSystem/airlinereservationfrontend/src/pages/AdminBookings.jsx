@@ -7,7 +7,7 @@ const AdminBookings = () => {
 
     useEffect(() => {
         // Fetch all bookings
-        fetch("http://localhost:8080/api/bookings")
+        fetch("http://localhost:8080/api/bookings/all")
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Failed to fetch bookings");

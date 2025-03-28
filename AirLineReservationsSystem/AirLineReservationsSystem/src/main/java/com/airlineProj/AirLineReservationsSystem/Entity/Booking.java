@@ -1,9 +1,12 @@
 package com.airlineProj.AirLineReservationsSystem.Entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import java.util.Date;
 
 @Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 @Table(name = "booking")
 public class Booking {
 
@@ -11,12 +14,16 @@ public class Booking {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne(cascade = CascadeType.MERGE) // Ensures existing passengers are updated, not duplicated
+//    @ManyToOne(cascade = CascadeType.MERGE) // Ensures existing passengers are updated, not duplicated
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "passenger_id", nullable = false)
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "bookings"})
     private Passenger passenger;
 
-    @ManyToOne(cascade = CascadeType.MERGE)
+//    @ManyToOne(cascade = CascadeType.MERGE)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "flight_id", nullable = false)
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "bookings"})
     private Flight flight;
 
     @Column(nullable = false)
@@ -29,6 +36,7 @@ public class Booking {
     private double totalAmount;
 
     @Temporal(TemporalType.TIMESTAMP)
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @Column(nullable = false, updatable = false)
     private Date bookingDate = new Date(); // Auto-assign date
 

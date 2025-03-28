@@ -125,8 +125,25 @@ public class BookingService {
     @Autowired
     private WalletRepository walletRepository;
 
+//    public List<Booking> getAllBookings() {
+//        return bookingRepository.findAll();
+//    }
+
     public List<Booking> getAllBookings() {
-        return bookingRepository.findAll();
+        List<Booking> bookings = bookingRepository.findAll();
+
+        bookings.forEach(booking -> {
+            // Manually load related entities to avoid LazyInitializationException
+            if (booking.getPassenger() != null) {
+                booking.getPassenger().getName();  // Force initialization
+                booking.getPassenger().getEmail();
+            }
+            if (booking.getFlight() != null) {
+                booking.getFlight().getId();
+            }
+        });
+
+        return bookings;
     }
 
     public Booking getBookingById(Long id) {
