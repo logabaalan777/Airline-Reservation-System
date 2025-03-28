@@ -72,7 +72,7 @@ Welcome to the project! Below are screenshots showcasing various features and pa
 
 ## Plane Image
 <p align="center">
-  <img src="https://raw.githubusercontent.com/hbu2004/output/main/plane.jpg" alt="Plane Image" width="45%">
+  <img src="https://raw.githubusercontent.com/hbu2004/output/main/Add%20plane.jpg" alt="Plane Image" width="45%">
 </p>
 
 
